@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSV File Upload</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .container{
+      background-color: rgba(255, 255, 255, 0.5);
+      margin-top: 30px;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-radius: 10px;
+    }
+    input{
+      display: block;
+      padding: 0 auto !important;
+    }
+    #file{
+      margin-left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+     <form class="fileupload" action="upload" method="post" enctype="multipart/form-data">
+      <h1>Upload your CSV File Here</h1>
+      <br>
+      <br>
+      <input type="file" id="file" name="upfile" value="">
+      <input type="submit" class="btn btn-success" />
+    </form>
+    <br>
+    <a href="/download" class="btn btn-primary">Download File</a>
+</div>
+
+</body>
+</html>
